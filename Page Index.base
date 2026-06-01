@@ -1,0 +1,15 @@
+filters:
+  and:
+    - or:
+        - file.ext == "md"
+        - file.ext == "md"
+        - file.ext == "md"
+views:
+  - type: table
+    name: Table
+    order:
+      - file.name
+      - tags
+      - file.folder
+      - file.mtime
+      - file.ctime
